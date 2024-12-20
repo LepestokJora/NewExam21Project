@@ -12,6 +12,7 @@
 		EDB3D81A2D14B3A000B4EA45 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB3D8192D14B3A000B4EA45 /* ViewController.swift */; };
 		EDB3D81F2D14B3A200B4EA45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDB3D81E2D14B3A200B4EA45 /* Assets.xcassets */; };
 		EDB3D8222D14B3A200B4EA45 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = EDB3D8212D14B3A200B4EA45 /* Base */; };
+		EDB3D82E2D161A2B00B4EA45 /* CustomUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB3D82D2D161A2B00B4EA45 /* CustomUIButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		EDB3D81E2D14B3A200B4EA45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EDB3D8212D14B3A200B4EA45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EDB3D8232D14B3A200B4EA45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDB3D82D2D161A2B00B4EA45 /* CustomUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUIButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				EDB3D8152D14B3A000B4EA45 /* AppDelegate.swift */,
 				EDB3D8172D14B3A000B4EA45 /* SceneDelegate.swift */,
 				EDB3D8192D14B3A000B4EA45 /* ViewController.swift */,
+				EDB3D82D2D161A2B00B4EA45 /* CustomUIButton.swift */,
 				EDB3D81E2D14B3A200B4EA45 /* Assets.xcassets */,
 				EDB3D8202D14B3A200B4EA45 /* LaunchScreen.storyboard */,
 				EDB3D8232D14B3A200B4EA45 /* Info.plist */,
@@ -134,6 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDB3D82E2D161A2B00B4EA45 /* CustomUIButton.swift in Sources */,
 				EDB3D81A2D14B3A000B4EA45 /* ViewController.swift in Sources */,
 				EDB3D8162D14B3A000B4EA45 /* AppDelegate.swift in Sources */,
 				EDB3D8182D14B3A000B4EA45 /* SceneDelegate.swift in Sources */,
