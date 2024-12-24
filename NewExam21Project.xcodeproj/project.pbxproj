@@ -10,9 +10,11 @@
 		EDB3D8162D14B3A000B4EA45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB3D8152D14B3A000B4EA45 /* AppDelegate.swift */; };
 		EDB3D8182D14B3A000B4EA45 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB3D8172D14B3A000B4EA45 /* SceneDelegate.swift */; };
 		EDB3D81A2D14B3A000B4EA45 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB3D8192D14B3A000B4EA45 /* ViewController.swift */; };
-		EDB3D81F2D14B3A200B4EA45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDB3D81E2D14B3A200B4EA45 /* Assets.xcassets */; };
 		EDB3D8222D14B3A200B4EA45 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = EDB3D8212D14B3A200B4EA45 /* Base */; };
 		EDB3D82E2D161A2B00B4EA45 /* CustomUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB3D82D2D161A2B00B4EA45 /* CustomUIButton.swift */; };
+		EDB3D8322D197DC700B4EA45 /* Extensions UIStackView .swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB3D8312D197DC700B4EA45 /* Extensions UIStackView .swift */; };
+		EDB3D8342D19F9F700B4EA45 /* ArrayService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB3D8332D19F9F700B4EA45 /* ArrayService.swift */; };
+		EDB3D8362D1AEE5600B4EA45 /* Extensions UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB3D8352D1AEE5600B4EA45 /* Extensions UIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +22,12 @@
 		EDB3D8152D14B3A000B4EA45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDB3D8172D14B3A000B4EA45 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		EDB3D8192D14B3A000B4EA45 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EDB3D81E2D14B3A200B4EA45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EDB3D8212D14B3A200B4EA45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EDB3D8232D14B3A200B4EA45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDB3D82D2D161A2B00B4EA45 /* CustomUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUIButton.swift; sourceTree = "<group>"; };
+		EDB3D8312D197DC700B4EA45 /* Extensions UIStackView .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions UIStackView .swift"; sourceTree = "<group>"; };
+		EDB3D8332D19F9F700B4EA45 /* ArrayService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayService.swift; sourceTree = "<group>"; };
+		EDB3D8352D1AEE5600B4EA45 /* Extensions UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions UIView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +64,9 @@
 				EDB3D8172D14B3A000B4EA45 /* SceneDelegate.swift */,
 				EDB3D8192D14B3A000B4EA45 /* ViewController.swift */,
 				EDB3D82D2D161A2B00B4EA45 /* CustomUIButton.swift */,
-				EDB3D81E2D14B3A200B4EA45 /* Assets.xcassets */,
+				EDB3D8332D19F9F700B4EA45 /* ArrayService.swift */,
+				EDB3D8352D1AEE5600B4EA45 /* Extensions UIView.swift */,
+				EDB3D8312D197DC700B4EA45 /* Extensions UIStackView .swift */,
 				EDB3D8202D14B3A200B4EA45 /* LaunchScreen.storyboard */,
 				EDB3D8232D14B3A200B4EA45 /* Info.plist */,
 			);
@@ -125,7 +131,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDB3D81F2D14B3A200B4EA45 /* Assets.xcassets in Resources */,
 				EDB3D8222D14B3A200B4EA45 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,8 +143,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDB3D82E2D161A2B00B4EA45 /* CustomUIButton.swift in Sources */,
+				EDB3D8342D19F9F700B4EA45 /* ArrayService.swift in Sources */,
+				EDB3D8362D1AEE5600B4EA45 /* Extensions UIView.swift in Sources */,
 				EDB3D81A2D14B3A000B4EA45 /* ViewController.swift in Sources */,
 				EDB3D8162D14B3A000B4EA45 /* AppDelegate.swift in Sources */,
+				EDB3D8322D197DC700B4EA45 /* Extensions UIStackView .swift in Sources */,
 				EDB3D8182D14B3A000B4EA45 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
