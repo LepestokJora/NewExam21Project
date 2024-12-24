@@ -15,6 +15,7 @@
 		EDB3D8322D197DC700B4EA45 /* Extensions UIStackView .swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB3D8312D197DC700B4EA45 /* Extensions UIStackView .swift */; };
 		EDB3D8342D19F9F700B4EA45 /* ArrayService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB3D8332D19F9F700B4EA45 /* ArrayService.swift */; };
 		EDB3D8362D1AEE5600B4EA45 /* Extensions UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB3D8352D1AEE5600B4EA45 /* Extensions UIView.swift */; };
+		EDB3D83E2D1B01EE00B4EA45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDB3D83D2D1B01EE00B4EA45 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		EDB3D8312D197DC700B4EA45 /* Extensions UIStackView .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions UIStackView .swift"; sourceTree = "<group>"; };
 		EDB3D8332D19F9F700B4EA45 /* ArrayService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayService.swift; sourceTree = "<group>"; };
 		EDB3D8352D1AEE5600B4EA45 /* Extensions UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions UIView.swift"; sourceTree = "<group>"; };
+		EDB3D83D2D1B01EE00B4EA45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				EDB3D8332D19F9F700B4EA45 /* ArrayService.swift */,
 				EDB3D8352D1AEE5600B4EA45 /* Extensions UIView.swift */,
 				EDB3D8312D197DC700B4EA45 /* Extensions UIStackView .swift */,
+				EDB3D83D2D1B01EE00B4EA45 /* Assets.xcassets */,
 				EDB3D8202D14B3A200B4EA45 /* LaunchScreen.storyboard */,
 				EDB3D8232D14B3A200B4EA45 /* Info.plist */,
 			);
@@ -131,6 +134,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDB3D83E2D1B01EE00B4EA45 /* Assets.xcassets in Resources */,
 				EDB3D8222D14B3A200B4EA45 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
