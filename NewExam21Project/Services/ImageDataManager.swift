@@ -10,7 +10,6 @@ import UIKit
 
 class ImageDataManager{
     
-    //    сюда надо передать массив из imageManadger  и в дальнейшем работать с массивом из этого класса
     private let imageManager = ImageManager()
     private var images: [StructImage] = []
     private var currentIndex = 0
@@ -18,7 +17,6 @@ class ImageDataManager{
     init(images: [StructImage]) {
         self.images = imageManager.getImage()
     }
-    
     
     func getCurrentImage() -> StructImage? {
         guard currentIndex >= 0, currentIndex < images.count else {return nil}

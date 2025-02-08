@@ -33,6 +33,4 @@ class CustomUIButton: UIButton {
             self.layer.shadowRadius = 10
         }
     }
-    
-    
 }

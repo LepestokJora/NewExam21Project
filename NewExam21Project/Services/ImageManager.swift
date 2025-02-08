@@ -18,7 +18,8 @@ class ImageManager {
             StructImage(imageName: "Cat3", discription: "Посмотрим повнимательнее!"),
             StructImage(imageName: "Cat4", discription: "О Боги, помогите мне решить!!)"),
             StructImage(imageName: "Cat5", discription: "Может так получится?!"),
-            StructImage(imageName: "Cat6", discription: "Mission complished!")
+            StructImage(imageName: "Cat6", discription: "Mission complished!"),
+            StructImage(imageName: "Cat7", discription: "Женя! Скорее выздоравливай!)")
         ]
     }
 

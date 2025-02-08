@@ -29,7 +29,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-       
+        
         setupStackView()
         setupLable()
         setupButton()
@@ -51,31 +51,23 @@ class ViewController: UIViewController {
             textLable.text = currectImages.discription
         }
     }
-    
-    private func setupImageView() {
-        image.layer.cornerRadius = 10
-    }
-    
-    private func setupLable() {
-        textLable.font = .systemFont(ofSize: 18, weight: .bold)
-        textLable.backgroundColor = .white
-        textLable.layer.cornerRadius = 6
-        textLable.clipsToBounds = true
-        textLable.textAlignment = .center
-    }
-    
     private func setupButton() {
         blueButton.backgroundColor = .blue
         whiteButton.backgroundColor = .white
         whiteButton.setTitleColor(.black, for: .normal)
         redButton.backgroundColor = .red
         
-        blueButton.setTitle("Back", for: .normal)
+        blueButton.setTitle("Last", for: .normal)
         whiteButton.setTitle("Next", for: .normal)
         redButton.setTitle("First", for: .normal)
     }
+}
+
+//MARK: - Sutup View
+
+private extension ViewController {
     
-    private func addActionButton() {
+    func addActionButton() {
         
         let nextButton = UIAction { _ in
             self.imageDataManager.getNextImage()
@@ -84,12 +76,12 @@ class ViewController: UIViewController {
         
         whiteButton.addAction(nextButton, for: .touchUpInside)
         
-        let backButton = UIAction { _ in
+        let lastButton = UIAction { _ in
             self.imageDataManager.getBackImage()
             self.updateUI()
         }
         
-        blueButton.addAction(backButton, for: .touchUpInside)
+        blueButton.addAction(lastButton, for: .touchUpInside)
         
         let firsButton = UIAction { _ in
             self.imageDataManager.getFirstImage()
@@ -99,7 +91,34 @@ class ViewController: UIViewController {
         redButton.addAction(firsButton, for: .touchUpInside)
     }
     
-    private func setupStackView(){
+    func setupLable() {
+        textLable.font = .systemFont(ofSize: 18, weight: .bold)
+        textLable.backgroundColor = .white
+        textLable.layer.cornerRadius = 6
+        textLable.clipsToBounds = true
+        textLable.textAlignment = .center
+    }
+    
+    func setupImageView() {
+        image.layer.cornerRadius = 10
+    }
+    
+    func setupImageContainerView() {
+        
+        imageContainerView.backgroundColor = .gray
+        imageContainerView.layer.shadowColor = UIColor.black.cgColor
+        imageContainerView.layer.shadowOffset = CGSize(width: 3, height: 3)
+        imageContainerView.layer.shadowOpacity = 0.6
+        imageContainerView.layer.cornerRadius = 15
+        imageContainerView.clipsToBounds = false
+    }
+}
+
+//MARK: - Setup Stack View
+
+private extension ViewController {
+    
+    func setupStackView(){
         
         stackView.axis = .vertical
         stackView.distribution = .equalSpacing
@@ -121,17 +140,7 @@ class ViewController: UIViewController {
         )
     }
     
-    private func setupImageContainerView() {
-        
-        imageContainerView.backgroundColor = .gray
-        imageContainerView.layer.shadowColor = UIColor.black.cgColor
-        imageContainerView.layer.shadowOffset = CGSize(width: 3, height: 3)
-        imageContainerView.layer.shadowOpacity = 0.6
-        imageContainerView.layer.cornerRadius = 15
-        imageContainerView.clipsToBounds = false
-    }
-    
-    private func setupLayout() {
+    func setupLayout() {
         stackView.translatesAutoresizingMaskIntoConstraints = false
         textLable.translatesAutoresizingMaskIntoConstraints = false
         imageContainerView.translatesAutoresizingMaskIntoConstraints = false
@@ -153,7 +162,6 @@ class ViewController: UIViewController {
             imageContainerView.heightAnchor.constraint(equalToConstant: 300),
             imageContainerView.widthAnchor.constraint(equalToConstant: 400),
             
-            //textLable.topAnchor.constraint(equalTo: imageContainerView.bottomAnchor, constant: 40),
             textLable.centerXAnchor.constraint(equalTo: stackView.centerXAnchor),
             textLable.widthAnchor.constraint(equalToConstant: fixitLable),
             textLable.heightAnchor.constraint(equalToConstant: 30),
@@ -171,10 +179,11 @@ class ViewController: UIViewController {
             redButton.centerYAnchor.constraint(equalTo: stackView.bottomAnchor),
             
         ])
-        
     }
 }
 
-    
+
+
+
 
 
