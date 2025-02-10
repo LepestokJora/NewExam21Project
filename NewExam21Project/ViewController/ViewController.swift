@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     private let horizontalStackView = UIStackView()
     
     private let imageManager = ImageManager()
-    private let imageDataManager = ImageDataManager(images: [])
+    private let imageDataManager = ImageDataManager()
     
     private let blueButton = CustomUIButton(hasShadow: true)
     private let whiteButton = CustomUIButton(hasShadow: true)
@@ -29,6 +29,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
+        imageDataManager.append(images: imageManager.getImage())
         
         setupStackView()
         setupLable()
@@ -141,13 +142,15 @@ private extension ViewController {
     }
     
     func setupLayout() {
-        stackView.translatesAutoresizingMaskIntoConstraints = false
-        textLable.translatesAutoresizingMaskIntoConstraints = false
-        imageContainerView.translatesAutoresizingMaskIntoConstraints = false
-        blueButton.translatesAutoresizingMaskIntoConstraints = false
-        whiteButton.translatesAutoresizingMaskIntoConstraints = false
-        redButton.translatesAutoresizingMaskIntoConstraints = false
-        image.translatesAutoresizingMaskIntoConstraints = false
+        [ stackView,
+          textLable,
+          imageContainerView,
+          blueButton,
+          whiteButton,
+          redButton,
+          image].forEach { view in
+            view.translatesAutoresizingMaskIntoConstraints = false
+        }
         
         
         NSLayoutConstraint.activate([

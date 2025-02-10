@@ -14,8 +14,12 @@ class ImageDataManager{
     private var images: [StructImage] = []
     private var currentIndex = 0
     
-    init(images: [StructImage]) {
-        self.images = imageManager.getImage()
+//    init(images: [StructImage]) {
+//        self.images = imageManager.getImage()
+//    }
+    
+    func append(images: [StructImage]) {
+        self.images.append(contentsOf: images)
     }
     
     func getCurrentImage() -> StructImage? {
