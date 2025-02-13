@@ -18,18 +18,19 @@ class ViewController: UIViewController {
     private let stackView = UIStackView()
     private let horizontalStackView = UIStackView()
     
-    private let imageManager = ImageManager()
-    private let imageDataManager = ImageDataManager()
+    private var manager = SceneDelegate().dataManager
     
     private let blueButton = CustomUIButton(hasShadow: true)
     private let whiteButton = CustomUIButton(hasShadow: true)
     private let redButton = CustomUIButton(hasShadow: false)
     
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-        imageDataManager.append(images: imageManager.getImage())
+        manager.append(images: manager.getImageManager())
+        totalManager(manager: manager)
         
         setupStackView()
         setupLable()
@@ -46,8 +47,12 @@ class ViewController: UIViewController {
         setupImageContainerView()
     }
     
+    private func totalManager(manager: IImageDataManager) {
+        self.manager = manager as! ImageDataManager
+    }
+    
     private func updateUI() {
-        if let currectImages = imageDataManager.getCurrentImage(){
+        if let currectImages = manager.getCurrentImage(){
             image.image = UIImage(named: currectImages.imageName)
             textLable.text = currectImages.discription
         }
@@ -71,21 +76,21 @@ private extension ViewController {
     func addActionButton() {
         
         let nextButton = UIAction { _ in
-            self.imageDataManager.getNextImage()
+            self.manager.getNextImage()
             self.updateUI()
         }
         
         whiteButton.addAction(nextButton, for: .touchUpInside)
         
         let lastButton = UIAction { _ in
-            self.imageDataManager.getBackImage()
+            self.manager.getBackImage()
             self.updateUI()
         }
         
         blueButton.addAction(lastButton, for: .touchUpInside)
         
         let firsButton = UIAction { _ in
-            self.imageDataManager.getFirstImage()
+            self.manager.getFirsImage()
             self.updateUI()
         }
         

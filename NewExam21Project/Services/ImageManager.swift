@@ -8,8 +8,11 @@
 import Foundation
 import UIKit
 
+protocol IImageManager{
+    func getImage() -> [StructImage]
+}
 
-class ImageManager {
+class ImageManager: IImageManager {
     
     func getImage() -> [StructImage] {
         return [
@@ -19,7 +22,8 @@ class ImageManager {
             StructImage(imageName: "Cat4", discription: "О Боги, помогите мне решить!!)"),
             StructImage(imageName: "Cat5", discription: "Может так получится?!"),
             StructImage(imageName: "Cat6", discription: "Mission complished!"),
-            StructImage(imageName: "Cat7", discription: "Женя! Скорее выздоравливай!)")
+            StructImage(imageName: "Cat7", discription: "Женя! Скорее выздоравливай!)"),
+            StructImage(imageName: "Cat8", discription: "Так, так, так! Что - то накрутил!)")
         ]
     }
 
